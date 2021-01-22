@@ -102,7 +102,7 @@
         <thead>
         <tr>
             <td>Название</td>
-            <td>Цена</td>
+            <td>Шт.</td>
             <td></td>
         </tr>
         </thead>
@@ -111,7 +111,7 @@
             <td>{{p.getKey}}</td>
             <td>{{p.getValue}}</td>
             <td>
-                <button class="btn btn-danger" ng-click="deleteProductById(p.id)">Удалить товар</button>
+                <button class="btn btn-danger" ng-click="deleteProductFromCart(p.getKey)">Удалить товар</button>
             </td>
         </tr>
         </tbody>

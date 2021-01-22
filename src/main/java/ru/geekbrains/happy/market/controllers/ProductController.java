@@ -34,7 +34,7 @@ public class ProductController {
         if (page < 1) {
             page = 1;
         }
-        return productService.findAll(ProductSpecifications.build(params), page, 2);
+        return productService.findAll(ProductSpecifications.build(params), page, 4);
     }
 
     // http://localhost:8189/happy/api/v1/products
